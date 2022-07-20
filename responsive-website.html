@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 1. viewpoet meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        /* 4.max-width and margin auto */
+        body{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 10vw;
+        }
+        /* 3.responsive image */
+        .tiger img{
+            width: 100%;
+        }
+
+        /* 6.Grid responsive (multi column) */
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 2px solid indianred;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .food img{
+            width: 100%;
+        }
+
+        /* 5.In a website two column should be use flex */
+        .container-two{
+            display: flex;
+        }
+        .container-two  .split{
+            width: 50%;
+        }
+        .split img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+             /* 5.In a website two column should be use flex */
+            .container-two{
+            flex-direction: column;
+        }
+        .container-two  .split{
+            width: 100%;
+        }
+        /* 6.Grid responsive (multi column) */
+        .container{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        }
+        @media screen and (min-width: 576px) and (max-width: 800px){
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <!-- 2. css relative unit -->
+    <section>
+        <h1>My Responsive Website</h1>
+    </section>
+    <!-- 3.responsive image -->
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/qmTrmidGxtYqoT4zjoxPcV.jpg" alt="">
+    </section>
+
+    <section>
+        <h2>Two Parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/food.jpg
+            " alt="">
+            </div>
+            <div class="split">
+                <img src="images/qmTrmidGxtYqoT4zjoxPcV.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- 6.Grid responsive (multi column) -->
+    <section>
+        <h2>Multi Column</h2>
+        <div class="container">
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-1</h2>
+                <h4>price: 100</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste error hic quasi accusamus porro totam commodi nostrum ea nihil repellendus? Molestias facilis porro voluptate molestiae, atque dolorem aut nemo harum!</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-2</h2>
+                <h4>price: 200</h4>
+                <p>Quo consequuntur, voluptatum consequatur possimus qui libero itaque eligendi natus, veritatis consectetur distinctio voluptatibus sed mollitia reprehenderit corrupti sit recusandae tempore ab quis modi molestias, aut animi ea assumenda. Magnam.</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-3</h2>
+                <h4>price: 300</h4>
+                <p>Quod optio nam, consequatur vero itaque voluptatibus laborum nemo earum nihil temporibus eius quas veritatis odit error aperiam aliquam ad tempora ab, unde perspiciatis quidem fugiat maiores quisquam. Ab, facilis.</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-4</h2>
+                <h4>price: 400</h4>
+                <p>In, nostrum accusamus quaerat earum eum nisi mollitia minus alias eveniet nulla dignissimos quas doloribus. Quasi voluptates adipisci, mollitia cumque possimus architecto ratione provident. Mollitia, possimus? Ad exercitationem eligendi vitae?</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-5</h2>
+                <h4>price: 500</h4>
+                <p>Modi cum sunt harum, ducimus dolor veniam reprehenderit deleniti assumenda. Quae at minus optio beatae quis veniam hic doloribus esse maiores? Rem, nostrum! Perspiciatis porro repudiandae dolore aliquam iure ex!</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-6</h2>
+                <h4>price: 600</h4>
+                <p>Inventore, quis odio ut minima dolore ea omnis sint quaerat recusandae earum voluptatibus pariatur labore aliquid accusantium veniam aut ipsa quasi. Blanditiis, corrupti! Recusandae a minus odit? Rerum, ullam iusto.</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-7</h2>
+                <h4>price: 700</h4>
+                <p>Modi praesentium quod totam repellat corrupti eos sequi qui iste veritatis tenetur repellendus, hic maiores dicta illum ea porro neque consequatur eius inventore provident! Magnam quidem vel velit provident. Nesciunt!</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-8</h2>
+                <h4>price: 800</h4>
+                <p>Et porro fugit, doloremque quas doloribus adipisci vel id voluptate, architecto repudiandae alias maxime dicta, ipsum aspernatur! Eum doloremque dolorum cumque officiis modi? Deleniti fugiat deserunt, maiores tenetur sint accusamus?</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-9</h2>
+                <h4>price: 900</h4>
+                <p>Officia, quae repellat nesciunt quis accusamus quos sapiente! Ipsum repudiandae est consectetur dignissimos quas, aliquid, eaque ullam, officiis dolorum autem nisi optio eum. Dolore harum voluptas amet quas, repudiandae temporibus.</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-10</h2>
+                <h4>price: 1000</h4>
+                <p>Illo corrupti facilis iure autem molestias, ducimus ut id cupiditate eligendi vero modi. Distinctio reprehenderit modi similique beatae libero temporibus soluta tempora ut itaque voluptates, accusamus sed quo mollitia cum.</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-11</h2>
+                <h4>price: 1100</h4>
+                <p>Accusamus, consequatur consectetur ipsam quas quidem ullam, repudiandae laborum ab velit omnis doloremque facilis eos architecto repellendus eius. Dolores placeat nobis earum neque dolor eaque dolorem nemo quia facere itaque?</p>
+                <button>Order Naw</button>
+            </div>
+            <div class="food">
+                <img src="images/food.jpg" alt="">
+                <h2>item-12</h2>
+                <h4>price: 1200</h4>
+                <p>Aliquid tempora ullam dolorem eos eveniet explicabo natus ex quibusdam laboriosam modi ab minus quia, ea dolore quisquam molestiae, alias dolor corrupti qui fugit, asperiores aliquam maxime rem harum. Nihil.</p>
+                <button>Order Naw</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 
+        1. viewpoet meta tag
+        2. css relative unit
+        3.responsive image
+        4.max-width and margin auto
+        5.Responsive Split section using flex (2 column section)
+        6.Grid responsive (multi column)
+        7.Responsive Menu(Bootstarp)-- futere
+
+     -->
+</body>
+
+</html>
